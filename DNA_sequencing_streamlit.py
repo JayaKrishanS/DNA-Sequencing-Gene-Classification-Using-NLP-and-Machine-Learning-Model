@@ -2,8 +2,6 @@ import  pickle
 import streamlit as st
 import pybase64
 from streamlit_option_menu import option_menu
-from sklearn.feature_extraction.text import CountVectorizer
-
 
 model = pickle.load(open("DNA_sequencing_model.pkl", "rb"))
 cv = pickle.load(open("DNA_sequencing_cv.pkl","rb"))
